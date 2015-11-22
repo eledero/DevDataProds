@@ -6,7 +6,7 @@ library(shiny)
 shinyUI(
   
   pageWithSidebar(
-   headerPanel('Predict the next element with differnt types of mean.'),
+   headerPanel('Predict the next element with different types of mean.'),
     sidebarPanel(
       h4('Please input the first 5 elements: '),
       h4(' '),
@@ -19,8 +19,16 @@ shinyUI(
       ),
     mainPanel(
     
-      h4('The prediction is:'),
-      verbatimTextOutput('prediction')
+      h4('The prediction for element # 6 is:'),
+      verbatimTextOutput('prediction'),
+      h4('_________________________________________________________________________________'),
+      h4('Instructions: '),
+      h5('Step 1: Input the first 5 elements in the textboxes.'),
+      h4(' '),
+      h5('Step 2: Select the type of prediction for the sixth element based on the input of Step 1. '),
+      h4(' '),
+      h5('Step 3: Enjoy! The prediction will be available to you in the right of the screen. '),
+      h4(' ')
     )
 )
 )
